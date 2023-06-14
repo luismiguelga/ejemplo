@@ -1,0 +1,124 @@
+body{
+margin: 0;
+display: grid;
+}
+#fotoco{
+  display: flex;
+  justify-content: center;
+}
+#fotoc{
+  border: 5px solid rgba(255, 0, 0, 0.608);
+  height: 250px;
+  width: 250px;
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
+#fotoc img{
+
+  height: 250px;
+  width: 250px;
+}
+#b{
+  display: flex;
+  justify-content: center;
+}
+#etiqueta-1, #etiqueta-2, #etiqueta-3, #etiqueta-4, #etiqueta-5, #etiqueta-6, #etiqueta-7, #etiqueta-8, #etiqueta-9, #etiqueta-10, #etiqueta-11, #etiqueta-12{
+border: 5px solid rgba(0, 0, 0, 0.415);
+margin: 10px;
+height: 120px;
+width:  120px;
+}
+
+#etiqueta-1 img{
+  background-size: 100% 100%;
+  height: 120px;
+  width:  120px;
+}
+#etiqueta-2 img{
+  background-size: 100% 100%;
+  height: 120px;
+  width:  120px;
+}
+#etiqueta-3 img{
+  background-size: 100% 100%;
+  height: 120px;
+  width:  120px;
+}
+#etiqueta-4 img{
+  background-size: 100% 100%;
+  height: 120px;
+  width:  120px;
+}
+#etiqueta-5 img{
+  background-size: 100% 100%;
+  height: 120px;
+  width:  120px;
+}
+#etiqueta-6 img{
+  background-size: 100% 100%;
+  height: 120px;
+  width:  120px;
+}
+#etiqueta-7 img{
+  background-size: 100% 100%;
+  height: 120px;
+  width:  120px;
+}
+#etiqueta-8 img{
+  background-size: 100% 100%;
+  height: 120px;
+  width:  120px;
+}
+#etiqueta-9 img{
+  background-size: 100% 100%;
+  height: 120px;
+  width:  120px;
+}
+#etiqueta-10 img{
+  background-size: 100% 100%;
+  height: 120px;
+  width:  120px;
+}
+#etiqueta-11 img{
+  background-size: 100% 100%;
+  height: 120px;
+  width:  120px;
+}
+#etiqueta-12 img{
+  background-size: 100% 100%;
+  height: 120px;
+  width:  120px;
+}
+#etiqueta-13 img{
+  background-size: 100% 100%;
+  height: 120px;
+  width:  120px;
+}
+
+
+#Opcionf{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(3, 1fr);
+gap: 20px;
+
+}
+
+@media screen and (max-width:500px ){ 
+  #Opcionf{
+  display: grid;
+grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width:350px ){ 
+  #Opcionf{
+  display: grid;
+grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width:200px ){ 
+  #Opcionf{
+  display: grid;
+grid-template-columns: repeat(1, 1fr);
+  }
+}

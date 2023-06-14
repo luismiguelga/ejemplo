@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foto perfil</title>
+  <link rel="stylesheet" href="FP.css">
+</head>
+<body>
+  <div id="container">
+  <div id="fotoco">
+    <div id="fotoc"></div>
+  </div>
+  <div id="b">
+  <div id="Opcionf"></div>
+</div>
+</div>
+</body>
+<script>
+  let fotoc =document.getElementById("fotoc")
+  let img =document.createElement("img")
+  
+  let Opcionf = document.getElementById("Opcionf");
+  let imagen=["./Fotos_C/Fp1.jpg", "./Fotos_C/Fp2.jpg", "./Fotos_C/Fp3.jpg", "./Fotos_C/Fp4.jpg","./Fotos_C/Fp5.jpg", "./Fotos_C/Fp6.jpg", "./Fotos_C/Fp7.jpg", "./Fotos_C/Fp8.jpg", "./Fotos_C/Fp9.jpg","./Fotos_C/Fp10.jpg", "./Fotos_C/Fp11.jpg", "./Fotos_C/Fp12.jpg","./Fotos_C/Fp13.jpg"];
+    for(let i = 1;  i <=12; i++) {
+        let div = document.createElement("div");
+        div.id = "etiqueta-"+ i;
+        Opcionf.appendChild(div);
+
+    let img =document.createElement("img");
+    img.src = imagen[0+i];
+    img.alt="imagen"+i;
+    div.appendChild(img);
+    }
+    for(let i = 1;  i <=12; i++){
+    document.getElementById("etiqueta-" + i).addEventListener("click",function(){
+      img.src =imagen[0+i];
+      fotoc.appendChild(img);
+    })
+    }
+</script>
+</html>
